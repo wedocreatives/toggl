@@ -25,6 +25,25 @@ trait ReportTrait {
     {
         return $this->sendGetMessage( 'https://www.toggl.com/reports/api/v2/summary', $data );
     }
+    
+    /**
+     * Returns the time entries for the requested parameters/filters.
+     *
+     * @param   array       $data       Data payload that is to be sent with the request
+     * @return  stdClass
+     */
+    public function detailedReport($page)
+    {
+
+        $data = array();
+        $data[ 'workspace_id' ] = $this->workspaceId;
+        $data[ 'since' ] = '2019-01-01';
+        $data[ 'until' ] = date("Y-m-d");
+        $data[ 'page' ] = $page;
+
+
+        return $this->sendGetMessage( 'https://www.toggl.com/reports/api/v2/details', $data );
+    }
 
     /**
      * Returns at-a glance information for a single project

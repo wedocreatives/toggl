@@ -1,15 +1,15 @@
 {
-    "name": "ixudra/toggl",
-    "description": "Custom PHP library to connect with the Toggl API - developed by Ixudra",
+    "name": "wedocreatives/toggl",
+    "description": "Custom PHP library to connect with the Toggl API - Fork of ixudra/toggl",
     "version": "0.6.0",
-    "keywords": ["Ixudra", "Laravel", "Toggl", "API"],
-    "homepage": "http://ixudra.be",
+    "keywords": ["Ixudra", "Laravel", "Toggl", "API", "Wedocreatives"],
+    "homepage": "https://wedocreatives.es",
     "license": "MIT",
 
     "authors": [
         {
-            "name": "Jan Oris",
-            "email": "jan.oris@gmail.com"
+            "name": "Rubén León",
+            "email": "ruben@wedocreatives.com"
         }
     ],
 
@@ -22,7 +22,7 @@
 
     "autoload": {
         "psr-4": {
-            "Ixudra\\Toggl\\": "src/"
+            "WedoCreatives\\Toggl\\": "src/"
         }
     }
 }

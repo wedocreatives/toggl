@@ -1,4 +1,4 @@
-<?php namespace Ixudra\Toggl\Facades;
+<?php namespace Wedocreatives\Toggl\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

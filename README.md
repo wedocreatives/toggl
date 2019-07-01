@@ -91,7 +91,7 @@ $app->withFacades();
 
 Then, register your class alias:
 ```
-class_alias('Ixudra\Toggl\Facades\Toggl', 'Toggl');
+class_alias('Wedocreatives\Toggl\Facades\Toggl', 'Toggl');
 ```
 
 Finally, you have to register your ServiceProvider (around line 70-80):

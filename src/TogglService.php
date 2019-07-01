@@ -1,18 +1,18 @@
-<?php namespace Ixudra\Toggl;
+<?php namespace Wedocreatives\Toggl;
 
 
 use Ixudra\Curl\Builder;
 use Ixudra\Curl\CurlService;
-use Ixudra\Toggl\Traits\ClientTrait;
-use Ixudra\Toggl\Traits\GroupTrait;
-use Ixudra\Toggl\Traits\ProjectTrait;
-use Ixudra\Toggl\Traits\ReportTrait;
-use Ixudra\Toggl\Traits\ReportUtilityTrait;
-use Ixudra\Toggl\Traits\TagTrait;
-use Ixudra\Toggl\Traits\TaskTrait;
-use Ixudra\Toggl\Traits\TimeEntryTrait;
-use Ixudra\Toggl\Traits\WorkspaceTrait;
-use Ixudra\Toggl\Traits\WorkspaceUsersTrait;
+use Wedocreatives\Toggl\Traits\ClientTrait;
+use Wedocreatives\Toggl\Traits\GroupTrait;
+use Wedocreatives\Toggl\Traits\ProjectTrait;
+use Wedocreatives\Toggl\Traits\ReportTrait;
+use Wedocreatives\Toggl\Traits\ReportUtilityTrait;
+use Wedocreatives\Toggl\Traits\TagTrait;
+use Wedocreatives\Toggl\Traits\TaskTrait;
+use Wedocreatives\Toggl\Traits\TimeEntryTrait;
+use Wedocreatives\Toggl\Traits\WorkspaceTrait;
+use Wedocreatives\Toggl\Traits\WorkspaceUsersTrait;
 use stdClass;
 
 class TogglService {

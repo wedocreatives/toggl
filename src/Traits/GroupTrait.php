@@ -1,4 +1,4 @@
-<?php namespace Ixudra\Toggl\Traits;
+<?php namespace Wedocreatives\Toggl\Traits;
 
 
 use stdClass;

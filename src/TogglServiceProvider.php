@@ -1,4 +1,4 @@
-<?php namespace Ixudra\Toggl;
+<?php namespace Wedocreatives\Toggl;
 
 
 use Illuminate\Support\ServiceProvider;

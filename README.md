@@ -22,7 +22,7 @@ Pull this package in through Composer.
 
     {
         "require": {
-            "ixudra/toggl": "0.*"
+            "wedocreatives/toggl": "0.*"
         }
     }
 
@@ -39,7 +39,7 @@ Add the service provider to your `config/app.php` file
     'providers'         => array(
 
         //...
-        Ixudra\Toggl\TogglServiceProvider::class,
+        Wedocreatives\Toggl\TogglServiceProvider::class,
 
     )
 
@@ -52,7 +52,7 @@ Add the facade to your `config/app.php` file:
     'aliases'           => array(
 
         //...
-        'Toggl'         => Ixudra\Toggl\Facades\Toggl::class,
+        'Toggl'         => Wedocreatives\Toggl\Facades\Toggl::class,
 
     ),
 
@@ -111,7 +111,7 @@ Finally, you have to register your ServiceProvider (around line 70-80):
 // $app->register('App\Providers\AppServiceProvider');
 
 // Package service providers
-$app->register(Ixudra\Toggl\TogglServiceProvider::class);
+$app->register(Wedocreatives\Toggl\TogglServiceProvider::class);
 ```
 
 
@@ -123,7 +123,7 @@ Create a new instance of the `TogglService` where you would like to use the pack
 
     $workspaceId = 123;
     $apiToken = 'your_toggl_api_token';
-    $togglService = new \Ixudra\Toggl\TogglService( $workspaceId, $apiToken );
+    $togglService = new \Wedocreatives\Toggl\TogglService( $workspaceId, $apiToken );
 
 ```
 
@@ -166,7 +166,7 @@ of the requests. Additionally, the package also provides several utility methods
 
     $workspaceId = 123;
     $apiToken = 'your_toggl_api_token';
-    $togglService = new \Ixudra\Toggl\TogglService( $workspaceId, $apiToken );
+    $togglService = new \Wedocreatives\Toggl\TogglService( $workspaceId, $apiToken );
 
     // Return an overview of what users in the workspace are doing and have been doing
     $response = $togglService->dashboard();
@@ -199,13 +199,3 @@ of the requests. Additionally, the package also provides several utility methods
 ## License
 
 This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-
-
-
-
-## Contact
-
-Jan Oris (developer)
-
-- Email: jan.oris@ixudra.be
-- Telephone: +32 496 94 20 57
